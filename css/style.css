@@ -1,0 +1,1239 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+.perant1 {
+    background: url("../images/back1.jpg") no-repeat center center/cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.perant1 .head {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.perant1 .head .head1 {
+    height: 40px;
+    width: 100%;
+    background-color: #2b1d12;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.perant1 .head .head1 ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.perant1 .head .head1 a {
+    color: #f1e4c3;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.perant1 .headleft {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.perant1 .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.perant1 .head1 .fa-brands {
+    color: #f1e4c3;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.perant1 .head .fa-brands:hover {
+    transform: rotateY(180deg);
+    color: #d9b46c;
+}
+
+.perant1 .head .head1 li {
+    position: relative;
+}
+
+.perant1 .head .head1 li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 2px;
+    height: 0%;
+    background-color: #d9b46c;
+    transition: height 0.3s ease;
+}
+
+.perant1 .head .head1 li:hover::after {
+    height: 100%;
+}
+
+.perant1 .head .head2 {
+    min-height: 80px;
+    width: 100%;
+    background-color: #3a2718;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.perant1 .head2 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.perant1 .head2 .img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: url("../images/logo.jpg") no-repeat center center/cover;
+}
+
+.perant1 .head2 .logo h2 {
+    color: #f1e4c3;
+    font-family: 'Cinzel Decorative', Georgia, serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.perant1 .head2 .list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.perant1 .head .head2 nav a {
+    text-decoration: none;
+    color: #f1e4c3;
+    font-weight: 500;
+    font-family: 'Cinzel', Georgia, serif;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    position: relative;
+    display: inline-block;
+}
+
+.perant1 .list a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.perant1 .list a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.perant1 .list a:hover::after {
+    width: 100%;
+    height: 100%;
+    border-bottom-color: #d9b46c;
+    border-right-color: #d9b46c;
+}
+
+.perant1 .list a:hover::before {
+    width: 100%;
+    height: 100%;
+    border-left-color: #d9b46c;
+    border-top-color: #d9b46c;
+}
+
+.perant1 .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.perant1 .head2 .hidden {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 400px;
+    background-color: #3a2718;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+.perant1 .dropdown:hover .hidden {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.perant1 .child1, 
+.perant1 .child2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.perant1 .hidden h3 {
+    font-style: italic;
+    font-family: 'IM Fell English', Georgia, serif;
+    color: #d9b46c;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.perant1 .child1 ul, 
+.perant1 .child2 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.perant1 .hidden li a {
+    color: #f1e4c3;
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0;
+    transition: all 0.2s ease;
+}
+
+.perant1 .hidden li a:hover {
+    font-weight: bold;
+    color: #d9b46c;
+}
+
+.perant1 .head2 .icons {
+    display: flex;
+    gap: 20px;
+}
+
+.perant1 .head2 .icons .fa-solid {
+    color: #f1e4c3;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.perant1 .head .icons .fa-solid:hover {
+    transform: translateY(-5px);
+}
+
+.perant1 .head3 {
+    width: 100%;
+    height: 40px;
+    background-color: #1c120a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perant1 .head3 h3 {
+    color: #e9dcc0;
+    font-style: italic;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+.perant1 .head3 a {
+    color: #d9b46c;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.perant1 .head3 a:hover {
+    font-weight: bold;
+    color: burlywood;
+    transform: translateY(-2px);
+}
+
+.hero-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 140px 130px;
+}
+
+.perant1 .old_child {
+    width: 420px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.perant1 .old_child h2 {
+    color: #e3c07a;
+    font-size: 60px;
+    font-weight: 400;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.perant1 .old_child h1 {
+    font-family: 'Cinzel Decorative', Georgia, serif;
+    color: #f4ecd8;
+    font-weight: 700;
+    font-size: 34px;
+    letter-spacing: 3px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.perant1 .old_child p {
+    color: #eadfc2;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.perant1 button {
+    width: 170px;
+    height: 45px;
+    border-radius: 2px;
+    color: #f4ecd8;
+    background-color: #7a2531;
+    font-family: 'Cinzel Decorative', Georgia, serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.perant1 button:hover {
+    background-color: #f4ecd8;
+    color: #7a2531;
+    transform: scale(1.07);
+}
+/*////////////////////////*/
+.perant2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 140px 130px;
+    min-height: 700px;
+    background-color: #f4ecd8;
+    box-sizing: border-box;
+}
+
+.perant2 .child {
+    width: 350px;
+    height: 500px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    display: flex;
+    align-items: flex-end;
+}
+
+.perant2 .child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 12, 6, 0.45);
+    transition: opacity 0.4s ease;
+    z-index: 1;
+}
+
+.perant2 .child:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(176, 141, 87, 0.5);
+}
+
+.perant2 .content {
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.perant2 h3 {
+    color: #f6ecd2;
+    font-family: 'Cinzel Decorative', Georgia, serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease;
+}
+
+.perant2 .cta-btn {
+    color: #e3c07a;
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+    padding: 8px 16px;
+    border-radius: 2px;
+    background-color: rgba(20, 12, 6, 0.55);
+}
+
+.perant2 .child:hover h3 {
+    transform: translateY(-5px);
+}
+
+.perant2 .child:hover .cta-btn {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.perant2 .cta-btn:hover {
+    background: #e3c07a;
+    color: #2b1d12;
+}
+
+.perant2 .child1 {
+    background: url("../images/back2.jpg") no-repeat center/cover;
+}
+
+.perant2 .child2 {
+    background: url("../images/back3.jpg") no-repeat center/cover;
+}
+
+.perant2 .child3 {
+    background: url("../images/back4.jpg") no-repeat center/cover;
+}
+/*/////////////////////////////*/
+/* ==================== Section 3: Top Destinations ==================== */
+.perant3 {
+    background-color: #e9dcbc;
+    padding: 60px 40px;
+    box-sizing: border-box;
+}
+
+.perant3 .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+.perant3 .head h2 {
+    color: #3b2314;
+    font-family: 'Cinzel Decorative', Georgia, serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.perant3 .head_left {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.perant3 .category-link {
+    color: #3b2314;
+    font-family: 'IM Fell English', Georgia, serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.perant3 .category-link:hover,
+.perant3 .category-link.active {
+    color: #7a2531;
+}
+
+.perant3 .line {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perant3 .line .category-link.active::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #7a2531;
+    border-radius: 2px;
+    margin-top: 4px;
+}
+
+.perant3 .childs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.perant3 .card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 280px;
+}
+
+.perant3 .child {
+    width: 100%;
+    height: 380px;
+    position: relative;
+    perspective: 1200px;
+    border-radius: 4px;
+}
+
+.perant3 .front, 
+.perant3 .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    backface-visibility: hidden;
+    transition: transform 0.9s cubic-bezier(0.45, 0.05, 0.25, 1);
+    box-shadow: 0 8px 20px rgba(59, 35, 20, 0.4);
+}
+
+.perant3 .front {
+    transform: rotateY(0deg);
+}
+
+.perant3 .back {
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.perant3 .child:hover .front {
+    transform: rotateY(-180deg);
+}
+
+.perant3 .child:hover .back {
+    transform: rotateY(0deg);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Background Images */
+.perant3 .child1 .front { background: url("../images/back5.jpg") center/cover no-repeat; }
+.perant3 .child1 .back  { background: url("../images/back6.jpg") center/cover no-repeat; }
+
+.perant3 .child2 .front { background: url("../images/back7.jpg") center/cover no-repeat; }
+.perant3 .child2 .back  { background: url("../images/back8.jpg") center/cover no-repeat; }
+
+.perant3 .child3 .front { background: url("../images/back9.jpg") center/cover no-repeat; }
+.perant3 .child3 .back  { background: url("../images/back10.jpg") center/cover no-repeat; }
+
+.perant3 .child4 .front { background: url("../images/back11.jpg") center/cover no-repeat; }
+.perant3 .child4 .back  { background: url("../images/back12.jpg") center/cover no-repeat; }
+
+.perant3 .icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbf6ea;
+    padding: 10px 20px;
+    border-radius: 4px;
+    backface-visibility: hidden;
+}
+
+.perant3 .icons .fa-solid {
+    font-size: 1.4rem;
+    color: #7a2531;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.perant3 .icons .fa-solid:hover {
+    color: #3b2314;
+    transform: translateY(-3px);
+}
+
+.perant3 .card-info {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.perant3 .card-info h3 {
+    color: #3b2314;
+    font-family: 'Cinzel Decorative', Georgia, serif;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+
+.perant3 .card-info h2 {
+    color: #7a2531;
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/*/////////////////////////////////////////*/
+/* ==================== Section 4: Testimonials ==================== */
+.perant4 {
+    background-color: #f4ecd8;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    box-sizing: border-box;
+}
+
+.perant4 .testimonial-card {
+    background-color: #fbf6ea;
+    max-width: 600px;
+    width: 100%;
+    padding: 35px 30px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.perant4 .testimonial-card h2 {
+    color: #3b2314;
+    font-family: 'Cinzel Decorative', Georgia, serif;
+    font-size: 1.9rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0 0 20px 0;
+}
+
+.perant4 .quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.perant4 .quote-container p {
+    color: #4a3624;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0;
+    font-style: italic;
+}
+
+.perant4 .nav-arrow {
+    color: #3b2314;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+    padding: 5px;
+}
+
+.perant4 .nav-arrow:hover {
+    color: #7a2531;
+    transform: scale(1.2);
+}
+
+.perant4 .user-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.perant4 .user-profile .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url("../images/back13.jpg"); 
+    background-size: cover;
+    background-position: center;
+}
+
+.perant4 .user-details {
+    text-align: left;
+}
+
+.perant4 .user-details h3 {
+    color: #3b2314;
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: 0;
+    text-shadow: #ffffff 1px 1px 2px;
+}
+
+.perant4 .user-details p {
+    color: #6b4a2a;
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 1rem;
+    margin: 3px 0 0 0;
+}
+/*/////////////////////////////////////////*/
+/* ==================== Section 5: Featured Destinations ==================== */
+.perant5 {
+    background-color: #e9dcbc;
+    padding: 60px 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.perant5 h2 {
+    color: #3b2314;
+    font-family: 'Cinzel Decorative', Georgia, serif;
+    letter-spacing: 2px;
+    text-shadow: rgba(176, 141, 87, 0.5) 2px 1px 2px, #b08d57 0px 0px 1px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+}
+
+.perant5 .destinations-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.perant5 .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    width: 100%;
+}
+
+.perant5 .card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perant5 .child {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.perant5 .front, 
+.perant5 .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: transform 0.8s ease-in-out;
+}
+
+.perant5 .front {
+    z-index: 1;
+}
+
+.perant5 .back {
+    z-index: 2;
+    transform: translateY(-100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.perant5 .child:hover .back {
+    transform: translateY(0);
+}
+
+/* Background Images for Front & Back */
+.perant5 .child1 .front { background: url("../images/back14.jpg") center/cover no-repeat; }
+.perant5 .child1 .back  { background: url("../images/back15.jpg") center/cover no-repeat; }
+
+.perant5 .child2 .front { background: url("../images/back16.jpg") center/cover no-repeat; }
+.perant5 .child2 .back  { background: url("../images/back15.jpg") center/cover no-repeat; }
+
+.perant5 .child3 .front { background: url("../images/back18.jpg") center/cover no-repeat; }
+.perant5 .child3 .back  { background: url("../images/back15.jpg") center/cover no-repeat; }
+
+.perant5 .child4 .front { background: url("../images/back20.jpg") center/cover no-repeat; }
+.perant5 .child4 .back  { background: url("../images/back15.jpg") center/cover no-repeat; }
+
+/* Icons inside Back Card */
+.perant5 .back .fa-solid,
+.perant5 .back .fa-regular {
+    font-size: 1.6rem;
+    color: #ffffff;
+    background: rgba(122, 37, 49, 0.88);
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.perant5 .back .fa-solid:hover,
+.perant5 .back .fa-regular:hover {
+    background: #3b2314;
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+/* Navigation Arrows */
+.perant5 .nav-arrow {
+    font-size: 2.2rem;
+    color: #3b2314;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+    padding: 10px;
+}
+
+.perant5 .nav-arrow:hover {
+    color: #7a2531;
+    transform: scale(1.2);
+}
+
+/* Card Text & Price Info */
+.perant5 .card-info {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.perant5 .card-info h3 {
+    font-family: 'Cinzel Decorative', Georgia, serif;
+    color: #3b2314;
+    text-shadow: #f8f1e0 1px 1px 2px;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.perant5 .card-info .hours {
+    font-family: 'IM Fell English', Georgia, serif;
+    color: #7a2531;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+}
+/*/////////////////////////////////////////*/
+/* ==================== Section 6: Beyond the Map ==================== */
+.perant6 {
+    background-color: #f4ecd8;
+    padding: 60px 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.perant6 h1 {
+    color: #3b2314;
+    font-family: 'Cinzel Decorative', Georgia, serif;
+    letter-spacing: 3px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    text-shadow: #f8f1e0 1px 1px 2px;
+}
+
+.perant6 .childs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.perant6 .child {
+    background-color: #fbf6ea;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.perant6 .child:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+.perant6 .img1,
+.perant6 .img2,
+.perant6 .img3 {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.perant6 .img1 { background-image: url("../images/back22.jpg"); }
+.perant6 .img2 { background-image: url("../images/back23.jpg"); }
+.perant6 .img3 { background-image: url("../images/back24.jpg"); }
+
+.perant6 .text {
+    padding: 25px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.perant6 .text h4 {
+    color: #7a2531;
+    font-family: 'Cinzel Decorative', Georgia, serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 8px 0;
+}
+
+.perant6 .text h3:nth-of-type(1) {
+    color: #3b2314;
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin: 0 0 12px 0;
+}
+
+.perant6 .text p {
+    color: #4a3624;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+    flex-grow: 1;
+}
+
+.perant6 .text h3:nth-of-type(2) {
+    color: #3b2314;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 0;
+    cursor: pointer;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.perant6 .text h3:nth-of-type(2):hover {
+    color: #7a2531;
+    transform: translateX(6px);
+}
+.perant6 .read-more {
+    color: #7a2531;
+    font-family: 'Cinzel Decorative', Georgia, serif;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.perant6 .read-more:hover {
+    color: #3b2314;
+    transform: translateX(6px);
+}
+/*/////////////////////////////////////////*/
+/* ==================== Section 7: Features ==================== */
+.perant7 {
+    background-color: #e9dcbc;
+    box-sizing: border-box;
+    padding: 60px 20px;
+}
+
+.perant7 .childs {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.perant7 .child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    min-width: 220px;
+}
+
+.perant7 .icons {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.perant7 .prim,
+.perant7 .hidden {
+    font-size: 2rem;
+    font-weight: 700;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.perant7 .prim {
+    color: #b08d57;
+    position: relative;
+}
+
+.perant7 .hidden {
+    color: #3b2314;
+    position: absolute;
+    top: 100%;
+}
+
+.perant7 .child:hover .prim {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.perant7 .child:hover .hidden {
+    transform: translateY(-100%);
+    opacity: 1;
+}
+
+.perant7 h3 {
+    color: #3b2314;
+    font-family: 'Cinzel Decorative', Georgia, serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 10px 0 5px 0;
+    text-shadow: 1px 1px 2px rgba(176, 141, 87, 0.5);
+}
+
+.perant7 p {
+    color: #4a3624;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0;
+    transition: color 0.2s ease, font-weight 0.2s ease;
+}
+
+.perant7 .child:hover p {
+    color: #7a2531;
+    font-weight: 600;
+}
+
+/* ==================== Section 8: Footer ==================== */
+.perant8 {
+    background-color: #2b1d12;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.perant8 .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.perant8 .sub {
+    flex: 1;
+    min-width: 300px;
+}
+
+.perant8 .sub h2 {
+    color: #f1e4c3;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    text-align: left;
+}
+
+.perant8 .sub p {
+    color: #e9dcc0;
+    font-style: italic;
+    font-size: 1.15rem;
+    margin: 0;
+}
+
+.perant8 .input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.perant8 .head input {
+    width: 280px;
+    height: 44px;
+    border-radius: 2px;
+    padding: 0 15px;
+    font-size: 0.95rem;
+    border: none;
+    background-color: #f4ecd8;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.perant8 .head input:focus {
+    border-color: #d9b46c;
+    box-shadow: 0 0 8px rgba(122, 37, 49, 0.4);
+}
+
+.perant8 button {
+    width: 120px;
+    height: 44px;
+    border-radius: 2px;
+    color: #f4ecd8;
+    background-color: #7a2531;
+    border: none;
+    font-family: 'Cinzel Decorative', Georgia, serif;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.perant8 button:hover {
+    transform: scale(1.03);
+    background-color: #f4ecd8;
+    color: #7a2531;
+}
+
+.perant8 .icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.perant8 .icons .fa-brands {
+    color: #f1e4c3;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.perant8 .icons .fa-brands:hover {
+    color: #d9b46c;
+    transform: translateY(-4px);
+}
+
+.perant8 hr {
+    border: none;
+    background-color: #d9b46c;
+    height: 1px;
+    max-width: 1200px;
+    margin: 30px auto;
+    opacity: 0.5;
+}
+
+.perant8 .childs {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.perant8 .child {
+    flex: 1;
+    min-width: 160px;
+}
+
+.perant8 .child1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.perant8 .child1 .logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-image: url("../images/logo.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.perant8 h2 {
+    color: #f1e4c3;
+    font-family: 'Cinzel Decorative', Georgia, serif;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+    font-style: italic;
+}
+
+.perant8 h3 {
+    color: #d9b46c;
+    font-family: 'Cinzel Decorative', Georgia, serif;
+    letter-spacing: 1px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0 0 15px 0;
+}
+
+.perant8 .child p {
+    color: #f1e4c3;
+    font-size: 1.15rem;
+    margin: 6px 0;
+    cursor: pointer;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.perant8 .child p:hover {
+    color: #d9b46c;
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
